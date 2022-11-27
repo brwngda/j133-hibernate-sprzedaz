@@ -1,4 +1,4 @@
-package pl.sda.hibernate;
+package pl.sda.hibernate.sprzedaz;
 
 public class Main {
     public static void main(String[] args) {
