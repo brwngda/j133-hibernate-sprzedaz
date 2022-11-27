@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Formula;
 
 @Data
 @Entity
@@ -21,4 +22,7 @@ public class Produkt {
 
     @Column(nullable = false)
     private String kategoria;
+
+    // @Formula /// DO WYPEŁNIENIA
+    private Double sredniaWazona;
 }

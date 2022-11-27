@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Data
 @Entity
 @Builder
@@ -23,5 +25,5 @@ public class Sprzedaz {
     private Double ilosc;
 
     @Column(nullable = false)
-    private String dataCzas;  //////// String??
+    private LocalDate dataCzas;
 }
