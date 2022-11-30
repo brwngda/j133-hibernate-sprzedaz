@@ -6,24 +6,22 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 @Data
 @Entity
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Sprzedaz {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private Double cena;
+    private String name;
 
     @Column(nullable = false)
-    private Double ilosc;
+    private Category category;
 
-    @Column(nullable = false)
-    private LocalDate dataCzas;
+    // @Formula /// DO WYPEŁNIENIA
+//    private Double sredniaWazona;
 }

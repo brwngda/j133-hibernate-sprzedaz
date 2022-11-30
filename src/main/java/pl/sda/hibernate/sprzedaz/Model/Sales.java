@@ -5,24 +5,26 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Formula;
+import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDateTime;
 @Data
 @Entity
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Produkt {
+
+public class Sales {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
-    private String nazwa;
+    @CreationTimestamp
+    private LocalDateTime dateAndTime;
 
     @Column(nullable = false)
-    private String kategoria;
+    private Double price;
 
-    // @Formula /// DO WYPEŁNIENIA
-    private Double sredniaWazona;
+    @Column(nullable = false)
+    private Double quantity;
 }
