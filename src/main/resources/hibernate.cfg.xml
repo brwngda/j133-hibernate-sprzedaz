@@ -14,7 +14,7 @@
      <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Definicja modeli -->
-        <mapping class="pl.sda.hibernate.model.Produkt"/>
-        <mapping class="pl.sda.hibernate.model.Sprzedaz"/>
+        <mapping class="pl.sda.hibernate.sprzedaz.Model.Produkt"/>
+        <mapping class="pl.sda.hibernate.sprzedaz.Model.Sprzedaz"/>
     </session-factory>
 </hibernate-configuration>
